@@ -7,9 +7,6 @@
 #import <UIKit/UIKit.h>
 
 
-#define isIOS7() (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1)
-
-
 /** This is a container class for all the theming-related code */
 @interface DBAppearance : NSObject
 

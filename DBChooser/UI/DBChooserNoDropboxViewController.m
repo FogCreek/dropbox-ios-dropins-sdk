@@ -33,9 +33,7 @@ static const CGFloat sNoDropboxViewSubtitlePaddingPad = 160;
 - (id)initWithCompletionBlock:(DBCBlock)done
 {
     self = [super init];
-    if (isIOS7()) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 
     if (self) {
         _completionBlock = done;

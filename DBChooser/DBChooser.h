@@ -43,12 +43,12 @@ typedef enum {
 
 /** This method opens the Chooser interface.
     @param linkType the linkType specifies the type of link to be returned from the Chooser.
-    @param topViewController the topmost view controller in your controller hierarchy.
+    @param fromViewController the topmost view controller in your controller hierarchy.
     @param completion this is the handler that will be invoked when we returned from the Chooser.
  */
 - (void)openChooserForLinkType:(DBChooserLinkType)linkType
-            fromViewController:(UIViewController *)topViewController
-                    completion:(DBChooserCompletionBlock)blk;
+            fromViewController:(UIViewController *)fromViewController
+                    completion:(DBChooserCompletionBlock)completion;
 
 /** You must call this method in your app delegate's `-application:openURL:sourceApplication:annotation:`
     method in order to handle responses from the Dropbox app.

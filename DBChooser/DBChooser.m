@@ -101,8 +101,6 @@
             return @"direct";
         case DBChooserLinkTypePreview:
             return @"preview";
-        default:
-            assert(NO); // unknown link type
     }
 }
 
@@ -171,7 +169,7 @@
         noDropboxModal.modalPresentationStyle = UIModalPresentationFormSheet;
     }
 
-    [topViewController presentModalViewController:noDropboxModal animated:YES];
+    [topViewController presentViewController:noDropboxModal animated:YES completion:nil];
 }
 
 - (void)dbc_completedWithResult:(NSArray*)results
