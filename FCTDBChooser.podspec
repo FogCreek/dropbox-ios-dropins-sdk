@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.summary = 'FCTDBChooser'
     spec.version = '1.0.0'
     spec.license = { :type => 'MIT' }
-    spec.platform = :ios, '7.1'
+    spec.platform = :ios, '7.0'
     spec.homepage = 'https://github.com/FogCreek/dropbox-ios-dropins-sdk'
     spec.source = {
         :git => 'https://github.com/FogCreek/dropbox-ios-dropins-sdk.git',
