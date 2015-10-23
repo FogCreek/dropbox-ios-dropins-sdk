@@ -51,6 +51,7 @@ static const CGFloat sNoDropboxViewSubtitlePaddingPad = 160;
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     [[self view] addSubview:[self dbc_noDropboxView]];
 }
 
